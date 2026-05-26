@@ -18,7 +18,7 @@ def generate_musica(sentimento_texto):
     conteudo_prompt = f"Encontre uma música real para este sentimento: {sentimento_texto}"
     
     response = client.models.generate_content(
-        model="gemini-3-flash-preview", 
+        model="gemini-3.1-flash-lite", 
         contents=conteudo_prompt,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
